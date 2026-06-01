@@ -6,6 +6,10 @@ variable "cloud_id" {
   description = "https://cloud.yandex.ru/docs/resource-manager/operations/cloud/get-id"
 }
 
+variable "token" {
+  type        = string
+}
+
 variable "folder_id" {
   type        = string
   description = "https://cloud.yandex.ru/docs/resource-manager/operations/folder/get-id"
@@ -31,8 +35,8 @@ variable "vpc_name" {
 
 ###ssh vars
 
-variable "vms_ssh_root_key" {
-  type        = string
-  default     = "<your_ssh_ed25519_key>"
-  description = "ssh-keygen -t ed25519"
-}
+# variable "vms_ssh_root_key" {
+#   type        = string
+#   default     = "<your_ssh_ed25519_key>"
+#   description = "ssh-keygen -t ed25519"
+# }
